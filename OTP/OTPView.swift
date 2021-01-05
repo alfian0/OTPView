@@ -133,9 +133,9 @@ class OTPView: UIControl, UIKeyInput {
 
     func deleteBackward() {
         if nextTag > 1 {
+            nextTag -= 1
             _ = value.popLast()
             (viewWithTag(nextTag)! as! UILabel).text = "_"
-            nextTag -= 1
         }
     }
 }
